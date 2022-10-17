@@ -1,0 +1,130 @@
+header {
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    z-index: 999;
+
+    background-color: var(--white);
+}
+
+header div.header-menubar {
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**/
+    border-bottom: 1px var(--text-color-light);
+}
+
+div.header-menubar .logo {
+    display: flex;
+    align-items: center;
+}
+
+div.header-menubar nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+div.header-menubar nav .nav-left {
+    width: auto;
+    height: 100%;
+}
+
+ul li:hover {
+    background-color: var(--text-color-extra-light);
+    transition: background .5s;
+    color: var(--text-color-dark);
+}
+
+nav .nav-left ul {
+    display: flex;
+    font-size: 15px;
+    font-weight: 544;
+}
+
+nav .nav-left ul li {
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 6px;
+    transition: background .5s;
+    cursor: pointer;
+    opacity: .9s;
+}
+
+nav .nav-right {
+    display: flex;
+}
+
+nav .nav-right ul {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-right ul li:nth-child(1) {
+    font-size: 15px;
+    font-weight: 544;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 6px;
+    transition: background .5s;
+}
+
+nav .nav-right ul li:nth-child(1) a {
+    color: var(--text-color-dark);
+}
+
+nav .nav-right .divider {
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 20px;
+    margin: 0 10px;
+    align-self: center;
+}
+
+nav .nav-right ul li:nth-child(2) {
+    line-height: 33px;
+    margin-left: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 10px;
+
+    color: var(--white);
+    background-color: var(--theme-link);
+    opacity: .9;
+    transition: .5s;
+}
+
+nav .nav-right ul li:nth-child(2):hover {
+    opacity: 1.6;
+    transition: .5s;
+}
+
+nav .nav-right ul li:nth-child(2) a {
+    color: var(--white);
+}
+
+.space {
+    height: 80px;
+    width: 100%;
+}
+
+main {
+    width: 87vw;
+    margin: 0 auto;
+    max-width: 1392px;
+}
+
+.principal-section {
+    margin: var(--space-between-section) 0;
+}
+

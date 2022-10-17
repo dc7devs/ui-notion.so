@@ -5,12 +5,15 @@
 }
 
 :root {
-    --background: #fffefc;
-    --text-color-extra-light: rgba(0, 0, 0, 0.2);
+    --white: #fffefc;
+    --theme-link: #ea4f44;
+    --text-color-extra-light: rgba(0, 0, 0, 0.03);
     --text-color-dark: rgba(17, 17, 17, 1);
     --text-color-light: rgba(0, 0, 0, 0.4);
     --text-color-medium: rgba(0, 0, 0, 0.6);
     --text-color-regular: rgba(4, 4, 4, 1);
+
+    --space-between-section: 80px;
 }
 
 body {
@@ -18,4 +21,16 @@ body {
     font-family: inter-var, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 17px;
     line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
