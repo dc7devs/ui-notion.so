@@ -8,9 +8,10 @@ header {
 }
 
 header div.header-menubar {
-    width: 100%;
+    width: 87vw;
     height: 100%;
-    max-width: 1100px;
+    max-width: 1392px;
+
     
     margin: 0 auto;
 
@@ -34,6 +35,11 @@ div.header-menubar nav {
     margin-left: 20px;
 }
 
+nav ul li .item-text, nav ul li a {
+    color: var(--text-color-dark);
+    font-weight: 600;
+}
+
 div.header-menubar nav .nav-left {
     width: auto;
     height: 100%;
@@ -48,7 +54,6 @@ ul li:hover {
 nav .nav-left ul {
     display: flex;
     font-size: 15px;
-    font-weight: 544;
 }
 
 nav .nav-left ul li {
@@ -76,10 +81,6 @@ nav .nav-right ul li:nth-child(1) {
     padding: 0 10px;
     border-radius: 6px;
     transition: background .5s;
-}
-
-nav .nav-right ul li:nth-child(1) a {
-    color: var(--text-color-dark);
 }
 
 nav .nav-right .divider {
@@ -125,6 +126,47 @@ main {
 }
 
 .principal-section {
+    display: flex;
     margin: var(--space-between-section) 0;
 }
 
+.principal-section .title-apresentation {
+    order: 1;
+}
+
+.principal-section .title-apresentation h1 {
+    font-size: 3.8125rem;
+    line-height: 4.0625rem;
+}
+
+.principal-section .title-apresentation h2 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    max-width: 420px;
+    color: var(--text-color-medium);
+    font-weight: 600;
+}
+
+.principal-section .title-apresentation .box-logotipos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 65%;
+}
+
+.principal-section .title-apresentation .box-logotipos img {
+    height: 25px;
+    filter: grayscale(100%);
+
+    margin: 10px 10px 5px;
+}
+
+.principal-section .image-banner {
+    order: 2;
+    max-width: 400px;
+    height: initial;
+    margin: auto auto;
+}
+.principal-section .image-banner img {
+    height: 100%;
+}
