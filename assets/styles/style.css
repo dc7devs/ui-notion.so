@@ -92,17 +92,7 @@ nav .nav-right .divider {
 }
 
 nav .nav-right ul li:nth-child(2) {
-    line-height: 33px;
-    margin-left: 10px;
-    border-radius: 6px;
-    font-size: 15px;
-    font-weight: 700;
-    padding: 0 10px;
-
-    color: var(--white);
     background-color: var(--theme-link);
-    opacity: .9;
-    transition: .5s;
 }
 
 nav .nav-right ul li:nth-child(2):hover {
@@ -131,7 +121,13 @@ main {
 }
 
 .principal-section .title-apresentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
     order: 1;
+    width: auto;
+    width: 100%;
 }
 
 .principal-section .title-apresentation h1 {
@@ -147,15 +143,28 @@ main {
     font-weight: 600;
 }
 
-.principal-section .title-apresentation .box-logotipos {
+.principal-section .title-apresentation .primary-button-apresentation {
+    margin: 20px 0 0;
+    height: 35px;
+    padding: 0 30px;
+}
+
+.principal-section .title-apresentation .box-teams p {
+    letter-spacing: 0.0075em;
+    font-size: 0.84375rem;
+    font-weight: 400;
+    color: var(--text-color-medium);
+}
+
+.principal-section .title-apresentation .box-teams .box-logotipos {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
     opacity: 65%;
 }
 
-.principal-section .title-apresentation .box-logotipos img {
-    height: 25px;
+.principal-section .title-apresentation .box-teams .box-logotipos img {
+    height: 23px;
     filter: grayscale(100%);
 
     margin: 10px 10px 5px;
@@ -163,10 +172,13 @@ main {
 
 .principal-section .image-banner {
     order: 2;
-    max-width: 400px;
+    display: flex;
+    align-items: center;
+    width: 100%;
     height: initial;
-    margin: auto auto;
 }
 .principal-section .image-banner img {
+    max-height: 350px;
+    margin-left: auto;
     height: 100%;
 }

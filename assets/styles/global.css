@@ -7,6 +7,7 @@
 :root {
     --white: #fffefc;
     --theme-link: #ea4f44;
+    --primary-button: #e16259;
     --text-color-extra-light: rgba(0, 0, 0, 0.03);
     --text-color-dark: rgba(17, 17, 17, 1);
     --text-color-light: rgba(0, 0, 0, 0.4);
@@ -33,4 +34,29 @@ ul, li {
 
 a {
     text-decoration: none;
+}
+
+.primary-button {
+    line-height: 33px;
+    height: 33px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 10px;
+
+    width: max-content;
+
+    color: var(--white);
+    background-color: var(--theme-link);
+    opacity: .9;
+    transition: .5s;
+}
+
+.primary-button a {
+    color: var(--white);
+}
+
+.primary-button:hover {
+    opacity: 1.6;
+    transition: .5s;
 }
