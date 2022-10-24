@@ -120,3 +120,16 @@ section.generic-main div.description-box p {
     color: var(--text-color-medium);
     font-weight: 400;
 }
+
+hr.separator {
+    height: 1px;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    width: 100%;
+    border-top: 1px solid var(--border-color-regular);
+
+    box-sizing: content-box;
+}

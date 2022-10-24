@@ -188,3 +188,41 @@ section.ecosystem div.banner-img img {
 section.roadmap div.description-box .box-img img {
     height: 50px;
 }
+
+section .header-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+section .header-section div.image-wrap img {
+    max-height: 150px;
+}
+
+section .header-section div.title-wrap {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+section .header-section div.title-wrap h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: varr(--text-color-dark);
+}
+
+section .header-section div.title-wrap h3 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: var(--text-color-medium);
+    font-weight: 500;
+}
+
+section .header-section div.title-wrap a {
+    margin-top: 17px;
+}
