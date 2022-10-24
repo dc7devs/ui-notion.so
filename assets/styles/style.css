@@ -93,6 +93,7 @@ nav .nav-right .divider {
 
 nav .nav-right ul li:nth-child(2) {
     background-color: var(--theme-link);
+    margin-left: 10px;
 }
 
 nav .nav-right ul li:nth-child(2):hover {
@@ -115,27 +116,22 @@ main {
     max-width: 1392px;
 }
 
-.principal-section {
-    display: flex;
-    margin: var(--space-between-section) 0;
-}
-
-.principal-section .title-apresentation {
+section.principal .title-apresentation {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
+    gap: 10px;
     
-    order: 1;
     width: auto;
     width: 100%;
 }
 
-.principal-section .title-apresentation h1 {
+section.principal .title-apresentation h1 {
     font-size: 3.8125rem;
     line-height: 4.0625rem;
 }
 
-.principal-section .title-apresentation h2 {
+section.principal .title-apresentation h2 {
     font-size: 1.125rem;
     line-height: 1.5rem;
     max-width: 420px;
@@ -143,42 +139,42 @@ main {
     font-weight: 600;
 }
 
-.principal-section .title-apresentation .primary-button-apresentation {
+section.principal .title-apresentation .primary-button-apresentation {
     margin: 20px 0 0;
     height: 35px;
     padding: 0 30px;
 }
+section.principal .title-apresentation .box-teams {
+    justify-self: flex-end;
+}
 
-.principal-section .title-apresentation .box-teams p {
+section.principal .title-apresentation .box-teams p {
     letter-spacing: 0.0075em;
     font-size: 0.84375rem;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--text-color-medium);
 }
 
-.principal-section .title-apresentation .box-teams .box-logotipos {
+section.principal .title-apresentation .box-teams .box-logotipos {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
     opacity: 65%;
 }
 
-.principal-section .title-apresentation .box-teams .box-logotipos img {
+section.principal .title-apresentation .box-teams .box-logotipos img {
     height: 23px;
     filter: grayscale(100%);
 
-    margin: 10px 10px 5px;
+    margin: 10px 10px 10px 0;
 }
 
-.principal-section .image-banner {
-    order: 2;
+section.principal .image-banner {
     display: flex;
-    align-items: center;
     width: 100%;
-    height: initial;
 }
-.principal-section .image-banner img {
-    max-height: 350px;
+section.principal .image-banner img {
     margin-left: auto;
+    max-height: 300px;
     height: 100%;
 }
