@@ -13,8 +13,10 @@
     --text-color-light: rgba(0, 0, 0, 0.4);
     --text-color-medium: rgba(0, 0, 0, 0.6);
     --text-color-regular: rgba(4, 4, 4, 1);
+    --border-color-regular: rgba(0, 0, 0, 0.1);
 
     --space-between-section: 80px;
+    --box-shadown-box: 0px 36px 89px rgb(0 0 0 / 4%), 0px 23.3333px 52.1227px rgb(0 0 0 / 3%), 0px 13.8667px 28.3481px rgb(0 0 0 / 2%), 0px 7.2px 14.4625px rgb(0 0 0 / 2%), 0px 2.93333px 7.25185px rgb(0 0 0 / 2%), 0px 0.666667px 3.50231px rgb(0 0 0 / 1%);
 }
 
 body {
@@ -65,19 +67,28 @@ section.global {
     display: flex;
     margin: var(--space-between-section) 0;
     flex-direction: row-reverse;
+    gap: 30px;
+    flex-wrap: nowrap;
+
+    align-items: center;
+    justify-content: center;
 }
 
-section.generic-main .banner-img {
-    height: 100%;
-    width: 70vw;
+section.generic-main div.banner-img {
+    max-height: calc(100vh - 160px);
 
-    background-color: red;
-}
-
-section.generic-main .banner-img img {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
     
-    box-shadow: 1px 1px 1px 1px #000;
+    flex-grow: 3;
+    background-color: var(--white);
+}
+
+section.generic-main div.banner-img img {
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: var(--box-shadown-box);
+}
+
+section.generic-main div.description-box {
+    flex-grow: 1;
 }
