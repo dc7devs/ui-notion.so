@@ -179,17 +179,17 @@ section.principal .banner-img img {
 }
 
 section.ecosystem div.banner-img img {
-    height: 100%;
     width: 100%;
     border: 1px solid var(--border-color-regular);
     box-shadow: none;
 }
 
-section.roadmap div.description-box .box-img img {
-    height: 50px;
+section.by-teams {
+    display: flex;
+    flex-direction: column;
 }
 
-section .header-section {
+section.by-teams div.header-section {
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
@@ -197,25 +197,25 @@ section .header-section {
     justify-content: space-between;
 }
 
-section .header-section div.image-wrap img {
+section.by-teams div.header-section div.image-wrap img {
     max-height: 150px;
 }
 
-section .header-section div.title-wrap {
+section.by-teams div.header-section div.title-wrap {
     display: flex;
     flex-direction: column;
     height: auto;
     flex-wrap: wrap;
 }
 
-section .header-section div.title-wrap .titles h2 {
+section.by-teams div.header-section div.title-wrap .titles h2 {
     font-size: 2.25rem;
     line-height: 2.5rem;
     font-weight: 700;
     color: varr(--text-color-dark);
 }
 
-section .header-section div.title-wrap .titles h3 {
+section.by-teams div.header-section div.title-wrap .titles h3 {
     max-width: 410px;
     font-size: 1.125rem;
     line-height: 1.5rem;
@@ -223,6 +223,10 @@ section .header-section div.title-wrap .titles h3 {
     font-weight: 500;
 }
 
-section .header-section div.title-wrap a {
+section.by-teams div.header-section div.title-wrap a {
     margin-top: 20px;
+}
+
+section.by-teams div.content-section {
+    margin: 60px 0;
 }
