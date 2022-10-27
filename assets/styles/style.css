@@ -187,6 +187,7 @@ section.ecosystem div.banner-img img {
 section.by-teams {
     display: flex;
     flex-direction: column;
+    gap: 0;
 }
 
 section.by-teams div.header-section {
@@ -228,5 +229,83 @@ section.by-teams div.header-section div.title-wrap a {
 }
 
 section.by-teams div.content-section {
+    display: flex;
+    flex-direction: row-reverse;
     margin: 60px 0;
+    width: 100%;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+section.by-teams div.content-section div.banner-img-round {
+    width: auto;
+}
+
+section.by-teams div.content-section div.banner-img-round img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--box-shadown-box);
+}
+
+section.by-teams div.content-section .tabs-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+section.by-teams div.content-section .tabs-column .details {
+    position: absolute;
+    width: max-content;
+    font-size: 0.84375rem;
+    font-weight: 400;
+    line-height: 1.1875rem;
+    color: var(--text-color-light);
+    bottom: 0;
+    left: 0;
+}
+
+section.by-teams div.content-section .tabs-column .details div {
+    display: flex;
+    height: 40px;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+section.by-teams div.content-section .tabs-column .details div img {
+    max-height: 30px;
+}
+
+section.by-teams div.content-section .tabs-column nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    font-size: 19px;
+    align-items: start;
+}
+
+section.by-teams div.content-section .tabs-column nav button {
+    width: auto;
+    cursor: pointer;
+    margin: 2px 0;
+    height: 35px;
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    border: 0;
+    border-radius: 5px;
+    transition: background .5s;
+}
+
+section.by-teams div.content-section .tabs-column nav button.bt-tabs:hover {
+    background-color: var(--text-color-extra-light);
+    transition: background .5s;
+}
+
+section.by-teams div.content-section .tabs-column .active-button {
+    background-color: rgba(0, 0, 0, 0.08);
 }
