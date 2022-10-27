@@ -138,11 +138,6 @@ section.principal .title-apresentation h2 {
     font-weight: 600;
 }
 
-section.principal .title-apresentation .primary-button-apresentation {
-    margin: 20px 0 0;
-    height: 35px;
-    padding: 0 30px;
-}
 section.principal .title-apresentation .box-teams {
     justify-self: flex-end;
 }
@@ -188,44 +183,6 @@ section.by-teams {
     display: flex;
     flex-direction: column;
     gap: 0;
-}
-
-section.by-teams div.header-section {
-    display: flex;
-    width: 100%;
-    flex-direction: row-reverse;
-    align-items: stretch;
-    justify-content: space-between;
-}
-
-section.by-teams div.header-section div.image-wrap img {
-    max-height: 150px;
-}
-
-section.by-teams div.header-section div.title-wrap {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    flex-wrap: wrap;
-}
-
-section.by-teams div.header-section div.title-wrap .titles h2 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-    color: varr(--text-color-dark);
-}
-
-section.by-teams div.header-section div.title-wrap .titles h3 {
-    max-width: 410px;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    color: var(--text-color-medium);
-    font-weight: 500;
-}
-
-section.by-teams div.header-section div.title-wrap a {
-    margin-top: 20px;
 }
 
 section.by-teams div.content-section {
@@ -293,12 +250,13 @@ section.by-teams div.content-section .tabs-column nav button {
     height: 35px;
     background: transparent;
     color: inherit;
-    font-size: inherit;
-    font-weight: inherit;
+    font-size: 1.0011rem;
+    font-weight: 600;
     padding: 0.2rem 0.6rem 0.2rem 0.6rem;
     border: 0;
     border-radius: 5px;
     transition: background .5s;
+    letter-spacing: -0.00075em;
 }
 
 section.by-teams div.content-section .tabs-column nav button.bt-tabs:hover {
@@ -308,4 +266,119 @@ section.by-teams div.content-section .tabs-column nav button.bt-tabs:hover {
 
 section.by-teams div.content-section .tabs-column .active-button {
     background-color: rgba(0, 0, 0, 0.08);
+}
+
+section.by-tamplates {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+section.by-tamplates div.header-section .image-wrap {
+    align-self: center;
+}
+
+section.by-tamplates div.header-section .image-wrap img {
+    max-height: 100px;
+}
+
+section.by-tamplates div.content-section {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+section.by-tamplates div.content-section .boxs-content {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+section.by-tamplates div.content-section .box-round-media {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 367px;
+    border-radius: 12px;
+}
+
+section.by-tamplates div.content-section .boxs-content div.overlay-contain {
+    position: relative;
+}
+
+section.by-tamplates div.content-section .boxs-content div.overlay-contain .image {
+    box-shadow: var(--box-shadown-primary-button);
+    border-radius: 12px;
+}
+
+section.by-tamplates div.content-section .boxs-content div.overlay-contain .image img {
+    max-height: 100%;
+    width: 100%;
+}
+
+section.by-tamplates div.content-section .boxs-content div.overlay-contain .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: hidden;
+    cursor: pointer;
+}
+
+section.by-tamplates div.content-section .boxs-content div.overlay-contain .overlay button {
+    border-radius: 38px;
+    height: 38px;
+    padding: 0 20px;
+    color: var(--white);
+    border: 2px solid var(--white);
+    background:rgba(0, 0, 0, 0.75);
+    box-shadow: var(--box-shadown-ternary-button);
+    transition: opacity 150ms, background 150ms;
+    font-size: 15px;
+
+    display: none;
+}
+
+section.by-tamplates div.content-section .boxs-content div.overlay-contain .overlay:hover {
+    background-color: var(--text-color-extra-light);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.by-tamplates div.content-section .boxs-content div.overlay-contain .overlay:hover button {
+    display: block;
+}
+
+section.by-tamplates div.content-section .box-round-media a {
+    color: var(--text-color-dark);
+    background-color: transparent;
+    font-size: 1.2rem;
+    line-height: 1.4375rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+section.by-tamplates div.content-section .box-round-media a:hover {
+    text-decoration: underline;
+}
+
+section.by-tamplates div.content-section nav.controls {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+section.by-tamplates div.content-section nav.controls div {
+    cursor: ponter;
+    width: max-content;
 }

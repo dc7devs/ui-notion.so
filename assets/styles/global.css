@@ -8,15 +8,21 @@
     --white: #fffefc;
     --theme-link: #ea4f44;
     --primary-button: #e16259;
+    --theme-text-black: #111;
+
     --text-color-extra-light: rgba(0, 0, 0, 0.03);
     --text-color-dark: rgba(17, 17, 17, 1);
     --text-color-light: rgba(0, 0, 0, 0.4);
     --text-color-medium: rgba(0, 0, 0, 0.6);
     --text-color-regular: rgba(4, 4, 4, 1);
+
     --border-color-regular: rgba(0, 0, 0, 0.1);
 
     --space-between-section: 80px;
     --box-shadown-box: 0px 36px 89px rgb(0 0 0 / 4%), 0px 23.3333px 52.1227px rgb(0 0 0 / 3%), 0px 13.8667px 28.3481px rgb(0 0 0 / 2%), 0px 7.2px 14.4625px rgb(0 0 0 / 2%), 0px 2.93333px 7.25185px rgb(0 0 0 / 2%), 0px 0.666667px 3.50231px rgb(0 0 0 / 1%);
+    --box-shadown-primary-button: 0px 4px 9px rgb(0 0 0 / 5%), 0px 1.54074px 2.86667px rgb(0 0 0 / 7%), 0px 0.325926px 0.733333px rgb(0 0 0 / 12%);
+    --box-shadown-secondary-button: 0px 3px 9px rgb(0 0 0 / 3%), 0px 0.7px 1.4625px rgb(0 0 0 / 2%);
+    --box-shadown-ternary-button: 0px 4px 18px rgb(0 0 0 / 4%), 0px 2.025px 7.84688px rgb(0 0 0 / 3%), 0px 0.8px 2.925px rgb(0 0 0 / 2%), 0px 0.175px 1.04062px rgb(0 0 0 / 1%);
 }
 
 body {
@@ -40,14 +46,15 @@ a {
 }
 
 .primary-button {
-    line-height: 33px;
-    height: 33px;
+    line-height: 35px;
+    height: 35px;
     border-radius: 6px;
     font-size: 15px;
     font-weight: 700;
     padding: 0 10px;
 
     width: max-content;
+    box-shadow: var(--box-shadown-primary-button);
 
     color: var(--white);
     background-color: var(--theme-link);
@@ -64,6 +71,28 @@ a {
     transition: .5s;
 }
 
+.secondary-button {
+    line-height: 35px;
+    height: 35px;
+    width: max-content;
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 0 10px;
+    color: var(--text-color-regular);
+    border: solid 1px var(--border-color-regular);
+    transition: .5s;
+}
+.secondary-button:hover {
+    transition: .5s;
+    background-color: var(--text-color-extra-light);
+}
+
+.content-button-apresentation {
+    margin: 20px 0 0;
+    height: 35px;
+    padding: 0 30px;
+}
+
 section.global {
     display: flex;
     margin: var(--space-between-section) 0;
@@ -76,7 +105,6 @@ section.global {
 }
 
 section.generic-main div.banner-img {
-    max-height: calc(100vh - 160px);
     border-radius: 12px;
     background-color: var(--white);
 }
@@ -113,8 +141,8 @@ section.generic-main div.description-box h3 {
 section.generic-main div.description-box p {
     line-height: 1.4375rem;
     margin: 0.6rem 0;
-    color: var(--text-color-medium);
-    font-weight: 400;
+    color: var(--text-color-light);
+    font-weight: 500;
 }
 
 hr.separator {
@@ -128,4 +156,42 @@ hr.separator {
     border-top: 1px solid var(--border-color-regular);
 
     box-sizing: content-box;
+}
+
+.header-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.header-section div.image-wrap img {
+    max-height: 150px;
+}
+
+.header-section div.title-wrap {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.header-section div.title-wrap .titles h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: varr(--text-color-dark);
+}
+
+.header-section div.title-wrap .titles h3 {
+    max-width: 500px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: var(--text-color-medium);
+    font-weight: 600;
+}
+
+.header-section div.title-wrap a {
+    margin-top: 20px;
 }
