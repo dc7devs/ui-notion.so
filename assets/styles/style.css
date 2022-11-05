@@ -64,6 +64,23 @@ nav .nav-left ul li {
     opacity: .9s;
 }
 
+nav .nav-left ul li div.item-text.arrow {
+    position: relative;
+    padding-right: 24px;
+}
+
+nav .nav-left ul li div.item-text.arrow::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 6px;
+    background: url(https://www.notion.so/front-static/shared/icons/nav-caret.svg);
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    right: 10px;
+}
+
 nav .nav-right {
     display: flex;
 }
@@ -116,10 +133,11 @@ main {
 }
 
 section.principal .title-apresentation {
+    flex: 2;
     display: flex;
     flex-direction: column;
 
-    gap: 10px;
+    gap: 25px;
     
     width: auto;
     width: 100%;
@@ -138,8 +156,9 @@ section.principal .title-apresentation h2 {
     font-weight: 600;
 }
 
-section.principal .title-apresentation .box-teams {
-    justify-self: flex-end;
+section.principal .title-apresentation div.primary-button-apresentation {
+    width: 165px;
+    text-align: center;
 }
 
 section.principal .title-apresentation .box-teams p {
@@ -154,16 +173,22 @@ section.principal .title-apresentation .box-teams .box-logotipos {
     align-items: center;
     justify-content: flex-start;
     opacity: 65%;
+    gap: 10px;
 }
 
 section.principal .title-apresentation .box-teams .box-logotipos img {
-    height: 23px;
+    height: 22px;
     filter: grayscale(100%);
-
+    margin: 10px 20px 10px 0;
+}
+section.principal .title-apresentation .box-teams .box-logotipos img + img {
+    height: 19px;
     margin: 10px 10px 10px 0;
 }
 
+
 section.principal .banner-img {
+    flex: 1;
     display: flex;
     width: 100%;
 }
@@ -174,7 +199,6 @@ section.principal .banner-img img {
 }
 
 section.ecosystem div.banner-img img {
-    width: 100%;
     border: 1px solid var(--border-color-regular);
     box-shadow: none;
 }
@@ -192,13 +216,16 @@ section.by-teams div.content-section {
     width: 100%;
     gap: 100px;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 section.by-teams div.content-section div.banner-img-round {
+    height: 100%;
     width: auto;
 }
 
 section.by-teams div.content-section div.banner-img-round img {
+    height: 100%;
     max-width: 100%;
     border-radius: 12px;
     box-shadow: var(--box-shadown-box);
@@ -381,4 +408,76 @@ section.by-tamplates div.content-section nav.controls {
 section.by-tamplates div.content-section nav.controls div {
     cursor: ponter;
     width: max-content;
+}
+
+section.by-tamplates div.content-section nav.controls div button {
+    border: 0;
+    background: none;
+}
+
+
+section.by-teams-comment div.header-section div.image-wrap img {
+    max-height: 230px;
+}
+
+section.by-teams-comment div.header-section div.title-wrap {
+    justify-content: center;
+}
+
+section.by-teams-comment div.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: auto;
+    gap: 20px;
+
+    width: 100%;
+}
+section.by-teams-comment div.content-section .box-comment {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section.by-teams-comment div.content-section .box-comment div.company-logo {
+    margin-bottom: 0.75rem;
+}
+section.by-teams-comment div.content-section .box-comment div.company-logo img {
+    max-height: 25px;
+}
+
+section.by-teams-comment div.content-section .box-comment blockquote {
+    letter-spacing: -0.0075em;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--text-color-medium);
+    text-indent: -6px;
+}
+
+section.by-teams-comment div.content-section .box-comment .person-wrap {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+}
+
+
+section.by-teams-comment div.content-section .box-comment .person-wrap img {
+    max-height: 60px;
+}
+section.by-teams-comment div.content-section .box-comment .person-wrap div {
+    font-family: inter-var, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 15px;
+    margin-left: 2px;
+    padding-bottom: 2px;
+}
+
+section.by-teams-comment div.content-section .box-comment .person-wrap h5 {
+    color: var(--text-color-dark);
+    opacity: .9;
+}
+
+section.by-teams-comment div.content-section .box-comment .person-wrap p {
+    color: var(--text-color-medium);
 }
