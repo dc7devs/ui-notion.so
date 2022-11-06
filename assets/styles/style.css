@@ -7,6 +7,7 @@ header {
     background-color: var(--white);
 }
 
+
 header div.header-menubar {
     width: 87vw;
     height: 100%;
@@ -17,8 +18,7 @@ header div.header-menubar {
     display: flex;
     justify-content: center;
     align-items: center;
-    /**/
-    border-bottom: 1px var(--text-color-light);
+    transition: .3s;
 }
 
 div.header-menubar .logo {
@@ -121,11 +121,6 @@ nav .nav-right ul li:nth-child(2) a {
     color: var(--white);
 }
 
-.space {
-    height: 80px;
-    width: 100%;
-}
-
 main {
     width: 87vw;
     margin: 0 auto;
@@ -158,6 +153,7 @@ section.principal .title-apresentation h2 {
 
 section.principal .title-apresentation div.primary-button-apresentation {
     width: 165px;
+    text-align: center;
 }
 
 section.principal .title-apresentation .box-teams p {
