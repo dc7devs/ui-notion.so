@@ -204,7 +204,6 @@ section.ecosystem div.banner-img img {
 }
 
 section.by-teams {
-    display: flex;
     flex-direction: column;
     gap: 0;
 }
@@ -296,7 +295,6 @@ section.by-teams div.content-section .tabs-column .active-button {
 }
 
 section.by-tamplates {
-    display: flex;
     flex-direction: column;
     gap: 0;
 }
@@ -429,7 +427,7 @@ section.by-teams-comment div.content-section {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-basis: auto;
-    gap: 20px;
+    gap: 65px;
 
     width: 100%;
 }
@@ -443,7 +441,7 @@ section.by-teams-comment div.content-section .box-comment div.company-logo {
     margin-bottom: 0.75rem;
 }
 section.by-teams-comment div.content-section .box-comment div.company-logo img {
-    max-height: 25px;
+    max-height: 27px;
 }
 
 section.by-teams-comment div.content-section .box-comment blockquote {
@@ -467,7 +465,6 @@ section.by-teams-comment div.content-section .box-comment .person-wrap img {
     max-height: 60px;
 }
 section.by-teams-comment div.content-section .box-comment .person-wrap div {
-    font-family: inter-var, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 15px;
     margin-left: 2px;
     padding-bottom: 2px;
@@ -481,3 +478,95 @@ section.by-teams-comment div.content-section .box-comment .person-wrap h5 {
 section.by-teams-comment div.content-section .box-comment .person-wrap p {
     color: var(--text-color-medium);
 }
+
+section.by-cta {
+    flex-direction: column;
+    gap: 0;
+
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+section.by-cta div.ilustration {
+    width: 300px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+}
+
+section.by-cta div.ilustration img {
+    max-width: 100%;
+}
+
+section.by-cta div.titles {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+section.by-cta div.titles div {
+    width: auto;
+    margin: 0 auto 5px;
+}
+section.by-cta div.titles img {
+    height: 80px;
+}
+
+section.by-cta div.titles h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+section.by-cta div.titles h3 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color-medium);
+    margin-top: 8px;
+}
+
+section.by-cta div.cta-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+section.by-cta div.cta-wrap > a {
+    margin: 10px auto;
+}
+section.by-cta div.cta-wrap a div.content-button-apresentation {
+    min-width: 200px;
+    text-align: center;
+    margin: 0;
+}
+
+section.by-cta div.cta-wrap p {
+    letter-spacing: 0.0005em;
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    font-weight: 400;
+    color: var(--text-color-medium)
+}
+
+section.by-cta div.cta-wrap p a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.1rem;
+    text-decoration-thickness: 1px;
+}
+
+section.by-cta div.cta-wrap p a:hover {
+    color: var(--theme-link);
+    font-weight: 470;
+    text-decoration: none;
+}
+
+footer {
+    width: 87vw;
+    margin: 0 auto;
+    max-width: 1392px;
+    margin-top: var(--space-between-section);
+}
+
