@@ -1,0 +1,107 @@
+@media (max-width: 1280px) {
+    button.menu-toggle {
+        display: block;
+    }
+
+    header div.header-menubar {
+        justify-content: space-between;
+    }
+    header div.header-menubar nav .nav-left,
+    header div.header-menubar nav .nav-right ul:nth-child(1),
+    header div.header-menubar nav .nav-right li.nav-right-item,
+    header div.header-menubar nav .nav-right div.divider {
+        display: none;
+    }
+    header div.header-menubar nav {
+        justify-content: flex-end;
+    }
+    header div.header-menubar nav div.nav-right li.nav-right-tnf-item {
+        margin-right: 8px;
+        align-self: flex-end;
+    }
+    section.by-tamplates div.content-section .box-round-media {
+        flex: none;
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 1265px) {
+    section.by-tamplates div.content-section .box-round-media:nth-last-child(1) {
+        display: none;
+    }
+}
+
+@media (max-width: 1032px) {
+    :root {
+        --space-between-section: 50px;
+    }
+
+    section.global {
+        gap: 0;
+    }
+
+    section .header-section {
+        flex-direction: column;
+    }
+
+    section .header-section .image-wrap {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    section.principal .title-apresentation {
+        align-items: center;
+    }
+    section.principal .title-apresentation h1 {
+        text-align: center;
+    }
+    section.principal .title-apresentation h2 {
+        text-align: center;
+    }
+    section.principal .title-apresentation .box-teams p {
+        text-align: center;
+    }
+    section.principal .title-apresentation div.primary-button-apresentation {
+        text-align: center;
+    }
+
+    section.generic-main div.banner-img {
+        flex: none;
+    }
+
+    section.by-teams div.content-section {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    section.by-teams div.content-section .tabs-column {
+        width: 100%;
+    }
+    section.by-teams div.content-section .tabs-column nav {
+        flex-direction: row;
+        overflow-x: scroll;
+        padding: 15px 0;
+    }
+    
+    section.by-teams div.content-section .tabs-column nav button.bt-tabs {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    section.by-teams div.content-section .tabs-column .details {
+        display: none;
+    }
+
+    section.by-teams-comment {
+        gap: 40px;
+    }
+
+    section.by-teams-comment div.content-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section.by-cta div.ilustration {
+        display: none;
+    }
+}

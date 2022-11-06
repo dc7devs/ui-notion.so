@@ -158,7 +158,6 @@ section.principal .title-apresentation h2 {
 
 section.principal .title-apresentation div.primary-button-apresentation {
     width: 165px;
-    text-align: center;
 }
 
 section.principal .title-apresentation .box-teams p {
@@ -186,16 +185,15 @@ section.principal .title-apresentation .box-teams .box-logotipos img + img {
     margin: 10px 10px 10px 0;
 }
 
-
 section.principal .banner-img {
     flex: 1;
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 section.principal .banner-img img {
-    margin-left: auto;
-    max-height: 300px;
-    height: 100%;
+    max-height: 280px;
+    height: auto;
 }
 
 section.ecosystem div.banner-img img {
@@ -314,19 +312,20 @@ section.by-tamplates div.content-section {
 }
 
 section.by-tamplates div.content-section .boxs-content {
+    position: relative;
     display: flex;
     justify-content: flex-start;
+    flex-basis: auto;
     gap: 30px;
     flex-wrap: wrap;
-
     width: 100%;
 }
 
 section.by-tamplates div.content-section .box-round-media {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 17px;
-    width: 367px;
     border-radius: 12px;
 }
 
@@ -489,7 +488,7 @@ section.by-cta {
 }
 
 section.by-cta div.ilustration {
-    width: 300px;
+    width: 260px;
     position: absolute;
     bottom: -80px;
     left: 0;
@@ -537,7 +536,7 @@ section.by-cta div.cta-wrap > a {
     margin: 10px auto;
 }
 section.by-cta div.cta-wrap a div.content-button-apresentation {
-    min-width: 200px;
+    min-width: 245px;
     text-align: center;
     margin: 0;
 }

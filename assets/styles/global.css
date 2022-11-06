@@ -57,6 +57,15 @@ blockquote:after {
     content: close-quote;
 }
 
+button.menu-toggle {
+    width: 36px;
+    height: 36px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
 .primary-button {
     line-height: 35px;
     height: 35px;
@@ -99,6 +108,8 @@ blockquote:after {
     
     font-weight: 600;
     transition: .5s;
+
+    cursor: pointer;
 }
 .secondary-button:hover {
     transition: .5s;
