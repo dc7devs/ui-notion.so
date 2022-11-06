@@ -8,14 +8,15 @@
     }
     header div.header-menubar nav .nav-left,
     header div.header-menubar nav .nav-right ul:nth-child(1),
-    header div.header-menubar nav .nav-right li.nav-right-item,
+    header div.header-menubar nav .nav-right li,
     header div.header-menubar nav .nav-right div.divider {
         display: none;
     }
     header div.header-menubar nav {
         justify-content: flex-end;
     }
-    header div.header-menubar nav div.nav-right li.nav-right-tnf-item {
+    header div.header-menubar nav div.nav-right li.nav-right-tnf-item.inscroll {
+        display: flex;
         margin-right: 8px;
         align-self: flex-end;
     }
@@ -59,9 +60,6 @@
         text-align: center;
     }
     section.principal .title-apresentation .box-teams p {
-        text-align: center;
-    }
-    section.principal .title-apresentation div.primary-button-apresentation {
         text-align: center;
     }
 
