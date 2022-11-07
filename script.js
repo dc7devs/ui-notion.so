@@ -1,8 +1,8 @@
-import ChangeStyleMenuBar from '/assets/modules/menu_bar.mjs';
-import RandomBannerAndIconDetailsImg from './assets/modules/random_img.mjs';
-import RandomList from './assets/utils/_array_lists.mjs';
+import ChangeStyleMenuBar from '/modules/menu_bar.mjs';
+import RandomBannerAndIconDetailsImg from './modules/random_img.mjs';
+import RandomList from './utils/_array_lists.mjs';
 
-const randomBannerAndIconDetailsImg = new RandomBannerAndIconDetailsImg();
+const random_exc = new RandomBannerAndIconDetailsImg();
 const randomList = new RandomList();
 
 // funcionalidade para animação da barra de menu
@@ -22,11 +22,11 @@ function delayLoop(fn, delay) {
 }
 
 function changeNext(myObject, index, myArray) {
-    randomBannerAndIconDetailsImg.ChangeNameCompany(myObject);
-    randomBannerAndIconDetailsImg.ChangeBannerImg(myObject);
-    randomBannerAndIconDetailsImg.ChangeDetailsImg(myObject);
+    random_exc.ChangeNameCompany(myObject);
+    random_exc.ChangeBannerImg(myObject);
+    random_exc.ChangeDetailsImg(myObject);
     
-    if(myArray.length == index) {
+    if(myArray.length-1 == index) {
         randomChange();
     }
 }
