@@ -1,6 +1,6 @@
 import ChangeStyleMenuBar from '/assets/modules/menu_bar.mjs';
 import RandomBannerAndIconDetailsImg from './assets/modules/random_img.mjs';
-import { CompanyRandomList, TamplatesRandomList }  from './assets/utils/array_lists.mjs';
+import { CompanyRandomList, TamplatesRandomList }  from './assets/utils/_array_lists.mjs';
 
 const randomBannerAndIconDetailsImg = new RandomBannerAndIconDetailsImg();
 
