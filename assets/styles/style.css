@@ -207,12 +207,14 @@ section.by-teams div.content-section {
     flex-direction: row-reverse;
     margin: 60px 0;
     width: 100%;
-    gap: 100px;
+    gap: 15px;
     justify-content: space-between;
     flex-wrap: nowrap;
+    flex-basis: auto;
 }
 
 section.by-teams div.content-section div.banner-img-round {
+    flex: 3;
     height: 100%;
     width: auto;
 }
@@ -222,36 +224,20 @@ section.by-teams div.content-section div.banner-img-round img {
     max-width: 100%;
     border-radius: 12px;
     box-shadow: var(--box-shadown-box);
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 section.by-teams div.content-section .tabs-column {
+    flex: 1;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
-}
-
-section.by-teams div.content-section .tabs-column .details {
-    position: absolute;
-    width: max-content;
-    font-size: 0.84375rem;
-    font-weight: 400;
-    line-height: 1.1875rem;
-    color: var(--text-color-light);
-    bottom: 0;
-    left: 0;
-}
-
-section.by-teams div.content-section .tabs-column .details div {
-    display: flex;
-    height: 40px;
-    justify-content: start;
-    align-items: flex-end;
-}
-
-section.by-teams div.content-section .tabs-column .details div img {
-    max-height: 30px;
 }
 
 section.by-teams div.content-section .tabs-column nav {
@@ -286,6 +272,33 @@ section.by-teams div.content-section .tabs-column nav button.bt-tabs:hover {
 
 section.by-teams div.content-section .tabs-column .active-button {
     background-color: rgba(0, 0, 0, 0.08);
+}
+
+section.by-teams div.content-section .tabs-column .details {
+    position: absolute;
+    width: max-content;
+    font-size: 0.84375rem;
+    font-weight: 400;
+    line-height: 1.1875rem;
+    color: var(--text-color-light);
+    bottom: 0;
+    left: 0;
+}
+
+section.by-teams div.content-section .tabs-column .details div {
+    display: flex;
+    height: 40px;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+section.by-teams div.content-section .tabs-column .details div img {
+    max-height: 30px;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 section.by-tamplates {

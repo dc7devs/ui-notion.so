@@ -63,6 +63,10 @@
         text-align: center;
     }
 
+    section.generic-main div.description-box div.box-img img {
+        height: 50px;
+    }
+
     section.generic-main div.banner-img {
         flex: none;
     }
@@ -77,8 +81,8 @@
     }
     section.by-teams div.content-section .tabs-column nav {
         flex-direction: row;
-        overflow-x: scroll;
-        padding: 15px 0;
+        overflow-x: auto;
+        padding: 8px 0 15px 0;
     }
     
     section.by-teams div.content-section .tabs-column nav button.bt-tabs {
