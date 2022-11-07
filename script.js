@@ -1,47 +1,15 @@
 import ChangeStyleMenuBar from '/assets/modules/menu_bar.mjs';
-import RandomBannerAndIconDetailsImg from '/assets/modules/random_img.mjs';
+import RandomBannerAndIconDetailsImg from './assets/modules/random_img.mjs';
+import { CompanyRandomList, TamplatesRandomList }  from './assets/utils/array_lists.mjs';
 
 const randomBannerAndIconDetailsImg = new RandomBannerAndIconDetailsImg();
 
-const CompanyRandomList = [
-    {
-        nameCompany: "Company home",
-        pathBannerRandom: "./assets/images/random_company/company-home.png",
-        pathIconRandom: "./assets/icons/figma-logo.png"
-    },
-    {
-        nameCompany: "Roadmap",
-        pathBannerRandom: "./assets/images/random_company/roadmap.png",
-        pathIconRandom: "./assets/icons/match.png"
-    },
-    {
-        nameCompany: "Design docs",
-        pathBannerRandom: "./assets/images/random_company/desing-docs.png",
-        pathIconRandom: "./assets/icons/headspace.png"
-    },
-    {
-        nameCompany: "Engineering wiki",
-        pathBannerRandom: "./assets/images/random_company/engineering-wiki.png",
-        pathIconRandom: "./assets/icons/branch.png"
-    },
-    {
-        nameCompany: "Meeting notes",
-        pathBannerRandom: "./assets/images/random_company/meeting-notes.png",
-        pathIconRandom: "./assets/icons/mixpanel _dark.png"
-    },
-    {
-        nameCompany: "Website publishing",
-        pathBannerRandom: "./assets/images/random_company/website-publishing.png",
-        pathIconRandom: "./assets/icons/multiverse.png"
-    }
-];
-
-// Barra de menu
+// funcionalidade para animação da barra de menu
 ChangeStyleMenuBar();
 
-// Animação de imagens randomicas
+// funcionalidade para animação/troca das imagens na seção 'by-teams'
 function randomChange() {
-    CompanyRandomList.forEach(delayLoop(changeNext, 3000));
+    CompanyRandomList().forEach(delayLoop(changeNext, 3000));
 };
 
 function delayLoop(fn, delay) {
@@ -53,13 +21,15 @@ function delayLoop(fn, delay) {
 }
 
 function changeNext(myObject, index, myArray) {
-    // randomBannerAndIconDetailsImg.ChangeNameCompany(ObjRandom);
+    randomBannerAndIconDetailsImg.ChangeNameCompany(myObject);
     randomBannerAndIconDetailsImg.ChangeBannerImg(myObject);
     randomBannerAndIconDetailsImg.ChangeDetailsImg(myObject);
     
-    if((myArray.length-1) == index) {
+    if(myArray.length == index) {
         randomChange();
     }
 }
 
 randomChange();
+
+// funcionalidade para animação/troca da seção 'by-tamplates'

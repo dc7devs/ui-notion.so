@@ -1,7 +1,7 @@
 export default class RandomBannerAndIconDetailsImg {
     ElImgRandom = document.querySelector("section.by-teams div.banner-img-round img");
     ElIconRandom = document.querySelector("section.by-teams div.tabs-column div.details div.logo-wrap img");
-    // ElTitleBtnRandom = querySelector("section.by-teams div.tabs-column nav button.bt-tas.active-button");
+    ElTitleBtnsRandom = document.querySelectorAll("section.by-teams div.tabs-column nav button.bt-tabs");
 
     /**
      * @Param {[ {nameCompany: string, pathBannerRandom: string, pathIconRandom: string} ]} Obj
@@ -20,7 +20,17 @@ export default class RandomBannerAndIconDetailsImg {
     /**
      * @Param {[ {nameCompany: string, pathBannerRandom: string, pathIconRandom: string} ]} Obj
     */
-    // ChangeNameCompany({ nameCompany }) {
-    //     ElTitleBtnRandom.innerHTML(nameCompany);
-    // }
+    ChangeNameCompany({ nameCompany }) {
+        for(let button of this.ElTitleBtnsRandom) {
+            if(button.innerHTML === nameCompany) {
+                if(!button.classList.contains("active-button")) {
+                    button.classList.add("active-button");
+                }
+            } else {
+                if(button.classList.contains("active-button")) {
+                    button.classList.remove("active-button");
+                }
+            }
+        }
+    }
 }
