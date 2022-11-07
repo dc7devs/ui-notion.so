@@ -1,15 +1,16 @@
 import ChangeStyleMenuBar from '/assets/modules/menu_bar.mjs';
 import RandomBannerAndIconDetailsImg from './assets/modules/random_img.mjs';
-import { CompanyRandomList, TamplatesRandomList }  from './assets/utils/_array_lists.mjs';
+import RandomList from './assets/utils/_array_lists.mjs';
 
 const randomBannerAndIconDetailsImg = new RandomBannerAndIconDetailsImg();
+const randomList = new RandomList();
 
 // funcionalidade para animação da barra de menu
 ChangeStyleMenuBar();
 
 // funcionalidade para animação/troca das imagens na seção 'by-teams'
 function randomChange() {
-    CompanyRandomList().forEach(delayLoop(changeNext, 3000));
+    randomList.CompanyRandomList().forEach(delayLoop(changeNext, 3000));
 };
 
 function delayLoop(fn, delay) {
