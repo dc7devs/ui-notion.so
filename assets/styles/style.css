@@ -389,13 +389,18 @@ section.by-tamplates div.content-section .boxs-content div.overlay-contain .over
     display: block;
 }
 
+/* para js */
+section.by-tamplates div.content-section .box-round-media {
+    display: flex;
+}
+
 section.by-tamplates div.content-section .box-round-media a {
     color: var(--text-color-dark);
     background-color: transparent;
     font-size: 1.2rem;
     line-height: 1.4375rem;
     font-weight: 600;
-    width: 100%;
+    width: max-content;
 }
 
 section.by-tamplates div.content-section .box-round-media a:hover {
@@ -413,12 +418,18 @@ section.by-tamplates div.content-section nav.controls {
 
 section.by-tamplates div.content-section nav.controls div {
     cursor: ponter;
-    width: max-content;
+    width: 40px;
+    padding: 0;
+    line-height: 0;
 }
 
 section.by-tamplates div.content-section nav.controls div button {
     border: 0;
     background: none;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 6px;
 }
 
 

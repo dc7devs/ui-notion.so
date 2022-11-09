@@ -62,6 +62,10 @@ blockquote:after {
     content: close-quote;
 }
 
+button {
+    cursor: pointer;
+}
+
 button.menu-toggle {
     width: 36px;
     height: 36px;

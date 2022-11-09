@@ -1,7 +1,7 @@
 export default function ChangeStyleMenuBar() {
-    let header = document.querySelector("header");
-    let header_menubar = document.querySelector("header div.header-menubar");
-    let primary_button = document.querySelector("li.nav-right-tnf-item");
+    const header = document.querySelector("header");
+    const header_menubar = document.querySelector("header div.header-menubar");
+    const primary_button = document.querySelector("li.nav-right-tnf-item");
     let did_scroll=false;
 
     function styleMenuBar() {    
