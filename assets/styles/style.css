@@ -389,11 +389,6 @@ section.by-tamplates div.content-section .boxs-content div.overlay-contain .over
     display: block;
 }
 
-/* para js */
-section.by-tamplates div.content-section .box-round-media {
-    display: flex;
-}
-
 section.by-tamplates div.content-section .box-round-media a {
     color: var(--text-color-dark);
     background-color: transparent;

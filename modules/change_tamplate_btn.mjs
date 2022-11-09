@@ -4,13 +4,13 @@ const randomList = new RandomList();
 export default function changeImageBox() {
     const ElLeftButton = document.querySelector("section.by-tamplates div.btn-left");
     const ElRightButton = document.querySelector("section.by-tamplates div.btn-right");
-    let ElBoxList = [];
+    const ElBoxList = [];
 
-    document.querySelectorAll("section.by-tamplates div.box-round-media").forEach(el => {
-        if(($(el).css("display") == "flex")) {
-            ElBoxList.push(el);
-        }
-    });
+    Array.from(document.querySelectorAll("section.by-tamplates div.box-round-media")).filter(box => {
+        box.style.display === "flex" && ElBoxList.push(box)
+    })
+
+    console.log(ElBoxList);
 
     ElRightButton.addEventListener("click", () => {
         fillBox(
