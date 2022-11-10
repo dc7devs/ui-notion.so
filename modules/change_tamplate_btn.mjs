@@ -12,25 +12,15 @@ export default function changeImageBox() {
         }
     });
 
-    let contClick=1;
-    let contStart=1;
-
+    // tratar em responsividade
     ElRightButton.addEventListener("click", () => {
-        if(contClick == 0) {
-            contClick += ElBoxList.length;
-            contStart = ElBoxList.length;
-        } else {
-            contClick *= ElBoxList.length;
-            contStart += ElBoxList.length;
-        }
-
         fillBox(
             randomList.TamplatesRandomList()
-                .slice(contStart, contClick)
+                .slice(ElBoxList.length)
         );
     });
 
-
+    // tratar em responsividade
     ElLeftButton.addEventListener("click", () => {
         fillBox(
             randomList.TamplatesRandomList()
@@ -50,3 +40,5 @@ export default function changeImageBox() {
 
     fillBox(randomList.TamplatesRandomList());
 }
+
+
