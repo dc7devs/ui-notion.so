@@ -6,18 +6,30 @@ export default function changeImageBox() {
     const ElRightButton = document.querySelector("section.by-tamplates div.btn-right");
     const ElBoxList = [];
 
-    Array.from(document.querySelectorAll("section.by-tamplates div.box-round-media")).filter(box => {
-        box.style.display === "flex" && ElBoxList.push(box)
-    })
+    document.querySelectorAll("section.by-tamplates div.box-round-media").forEach(el => {
+        if(($(el).css("display") == "flex")) {
+            ElBoxList.push(el);
+        }
+    });
 
-    console.log(ElBoxList);
+    let contClick=1;
+    let contStart=1;
 
     ElRightButton.addEventListener("click", () => {
+        if(contClick == 0) {
+            contClick += ElBoxList.length;
+            contStart = ElBoxList.length;
+        } else {
+            contClick *= ElBoxList.length;
+            contStart += ElBoxList.length;
+        }
+
         fillBox(
             randomList.TamplatesRandomList()
-                .slice(ElBoxList.length)
+                .slice(contStart, contClick)
         );
     });
+
 
     ElLeftButton.addEventListener("click", () => {
         fillBox(
